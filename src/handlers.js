@@ -41,7 +41,6 @@ const handlePublic = (request, response, url) => {
 };
 
 const handleAPI = (req, res, url) => {
-  const queryString = url.split("=")[1];
   url = `http://www.omdbapi.com/?s=star-wars&apikey=2293fce7`;
   request(url, (error, response, body) => {
     if (error) {
