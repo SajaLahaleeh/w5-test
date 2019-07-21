@@ -1,9 +1,10 @@
 {
   "name": "w5-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "The server has been set up for you, so that the only place you need to write code is in the 'handleAPI' handler in `src/handler.js`. The api url is: `http://www.omdbapi.com/?s=star-wars&apikey=<APIKEY>`. Note: Insert your API key (created [here](http://www.omdbapi.com/apikey.aspx)) into the querystring!",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/server.js",
     "start": "node src/server.js"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jema28/w5-test/issues"
   },
-  "homepage": "https://github.com/jema28/w5-test#readme"
+  "homepage": "https://github.com/jema28/w5-test#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
